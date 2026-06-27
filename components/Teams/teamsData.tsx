@@ -1,0 +1,543 @@
+import { Team, TeamSection } from "@/types/team";
+
+const GenSecMembers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/Animesh-1.JPG.jpeg",
+    title: "Animesh Kumar Soni",
+    designation: "General Secretary, PG",
+    role: "AnC Council",
+    description: "",
+    phone: "+91 8770586171",
+    email: "pg_anc@iitk.ac.in",
+    linkedin: "https://www.linkedin.com/in/animesh-kumar-soni-794189173/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/adwait2.webp",
+    title: "Adwaaiit Pande",
+    designation: "General Secretary, UG",
+    role: "AnC Council",
+    description: "",
+    phone: "+91 9372256863",
+    email: "ug_anc@iitk.ac.in",
+    linkedin: "https://www.linkedin.com/in/adwaaiitpande24/",
+  },
+];
+
+const IsecMembers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/shyamraj.jpeg",
+    title: "Shyam Raj",
+    designation: "Institute Secretary, PG",
+    role: "AnC Council",
+    description: "",
+    phone: "+91 6202552479",
+    email: "shyamraj25@iitk.ac.in",
+    linkedin: "",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/akshat2.webp",
+    title: "Akshat Dhote",
+    designation: "Institute Secretary, UG",
+    role: "IR and Research (UG)",
+    description: "",
+    phone: "+91 9322058545",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/akshat-dhote-9b1229241/",
+  },
+  {
+    id: 3,
+    icon: "/images/wings/teampics/Aryamann.webp",
+    title: "Aryamann Srivastava",
+    designation: "Institute Secretary, UG",
+    role: "Career Development & UG Academics",
+    description: "",
+    phone: "+91 8395060000",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/aryamann-srivastava-033674280/",
+  },
+];
+
+const cdevTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/piyush9.webp",
+    title: "Piyush Prashant Wagh",
+    designation: "UG Manager",
+    role: "Career Development Wing",
+    description: "",
+    phone: "+91 7796694430",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/piyushpwagh",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/granth.webp",
+    title: "Granth Kothari",
+    designation: "UG Manager",
+    role: "Career Development Wing",
+    description: "",
+    phone: "+91 8529528390",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/granthkothari/",
+  },
+  {
+    id: 3,
+    icon: "/images/wings/teampics/saatvik.webp",
+    title: "Saatvik Singh",
+    designation: "UG Manager",
+    role: "Career Development Wing",
+    description: "",
+    phone: "+91 7977598528",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/saatviksingh/",
+  },
+  {
+    id: 4,
+    icon: "/images/wings/teampics/rudra2.webp",
+    title: "Rudra Sharma",
+    designation: "UG Manager",
+    role: "Career Development Wing",
+    description: "",
+    phone: "+91 8080421500",
+    email: "",
+    linkedin: "",
+  },
+];
+
+const researchTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/anshu-sharma.jpeg",
+    title: "Anshu Sharma",
+    designation: "UG Manager",
+    role: "Research Wing",
+    description: "",
+    phone: "",
+    email: "",
+    linkedin: "",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/neha.webp",
+    title: "E Nehasri",
+    designation: "UG Manager",
+    role: "Research Wing (U.G.)",
+    description: "",
+    phone: "+91 9391268919",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/neha-sri-eragandula-04a290367/",
+  },
+  {
+    id: 3,
+    icon: "/images/wings/teampics/antriksh_research.webp",
+    title: "Antriksh Singhal",
+    designation: "UG Manager",
+    role: "Research Wing (U.G.)",
+    description: "",
+    phone: "+91 9319715666",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/antriksh-singhal-f105/",
+  },
+];
+
+const acadesTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/ashankarafinal.webp",
+    title: "A Sankara Narayanan",
+    designation: "UG Manager",
+    role: "Academics Wing",
+    description: "",
+    phone: "+91 8825922622",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/a-sankara-narayanan/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/pallavfinal.webp",
+    title: "Pallav Pratibh",
+    designation: "UG Manager",
+    role: "Academics Wing",
+    description: "",
+    phone: "+91 6202038181",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/pallav-pratibh-337528372/",
+  },
+  {
+    id: 3,
+    icon: "/images/wings/teampics/iqrafinal.webp",
+    title: "Iqra Afreen",
+    designation: "UG Manager",
+    role: "Academics Wing",
+    description: "",
+    phone: "+91 7985111736",
+    email: "",
+    linkedin: "",
+  },
+];
+
+const interNationalTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/aditya2.webp",
+    title: "Aditya Goel",
+    designation: "UG Manager",
+    role: "International Relations Wing",
+    description: "",
+    phone: "+91 8960424324",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/aditya-goel-083426314/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/dipshikha.webp",
+    title: "Dipsikha Rano",
+    designation: "UG Manager",
+    role: "International Relations Wing",
+    description: "",
+    phone: "+91 9073384322",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/dipsikha-rano-9a4800388/",
+  },
+  {
+    id: 3,
+    icon: "/images/wings/teampics/sumith2.webp",
+    title: "Sumit Huddar",
+    designation: "UG Manager",
+    role: "International Relations Wing",
+    description: "",
+    phone: "+91 9668084208",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/sumit-huddar-a64a02312/",
+  },
+  {
+    id: 4,
+    icon: "/images/wings/teampics/kartikey2.webp",
+    title: "Kartikey Singh Tomar",
+    designation: "UG Manager",
+    role: "International Relations Wing",
+    description: "",
+    phone: "+91 9131030989",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/kartikey-tomar-72b29b338/",
+  },
+  {
+    id: 5,
+    icon: "/images/wings/teampics/ausha2.webp",
+    title: "Anusha Gupta",
+    designation: "UG Manager",
+    role: "International Relations Wing",
+    description: "",
+    phone: "+91 7875705353",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/anusha-gupta-33b429330/",
+  },
+];
+
+const pclubTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/aman2.webp",
+    title: "Aman Agrawal",
+    designation: "UG Coordinator",
+    role: "Product Club",
+    description: "",
+    phone: "+91 9174470080",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/aman-agrawal-80b630315/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/swayam2.webp",
+    title: "Swayam Agarwal",
+    designation: "UG Coordinator",
+    role: "Product Club",
+    description: "",
+    phone: "+91 7002738453",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/swayam-agarwal-9a7a091b0/",
+  },
+  {
+    id: 3,
+    icon: "/images/wings/teampics/mitanshi2.webp",
+    title: "Mitanshi Khandelwal",
+    designation: "UG Coordinator",
+    role: "Product Club",
+    description: "",
+    phone: "+91 9131430062",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/mitanshi-khandelwal-aa6400323/",
+  },
+  {
+    id: 4,
+    icon: "/images/wings/teampics/prakhar.webp",
+    title: "Prakhar Gupta",
+    designation: "UG Coordinator",
+    role: "Product Club",
+    description: "",
+    phone: "+91 8140511723",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/prakhar-gupta-62522631a/",
+  },
+];
+
+const outreachTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/harshit2.webp",
+    title: "Harshit Saini",
+    designation: "UG Coordinator",
+    role: "Finance and Logistics",
+    description: "",
+    phone: "+91 8474999567",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/harshit-saini-35aa97337/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/sumitroy.webp",
+    title: "Sumit Roy",
+    designation: "UG Coordinator",
+    role: "Finance and Logistics",
+    description: "",
+    phone: "+91 6291502488",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/sumit-roy-01689531a/",
+  },
+];
+
+const mediaTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/anshika.webp",
+    title: "Anshika Singh",
+    designation: "UG Coordinator",
+    role: "Media and Publicity Wing",
+    description: "",
+    phone: "+91 9305392439",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/anshika-singh-880831346/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/riddhi.webp",
+    title: "Riddhi Maheshwari",
+    designation: "UG Coordinator",
+    role: "Media and Publicity Wing",
+    description: "",
+    phone: "+91 8824282797",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/riddhi-maheshwari-95077b369/",
+  },
+];
+
+const webTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/priya2.webp",
+    title: "Priya Panwar",
+    designation: "UG Coordinator",
+    role: "Web Wing",
+    description: "",
+    phone: "+91 8750575744",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/priya-panwar-546216371/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/op.webp",
+    title: "Omprakash Netam",
+    designation: "UG Coordinator",
+    role: "Web Wing",
+    description: "",
+    phone: "+91 6264577461",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/omprakash-netam-b2b019368/",
+  },
+];
+
+const igtsTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/shikhar2.webp",
+    title: "Shihar Gupta",
+    designation: "UG Leader",
+    role: "Indian Game Theory Society (IGTS)",
+    description: "",
+    phone: "+91 9140375292",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/shikhar-gupta-0633a9250/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/pallavigts.webp",
+    title: "Pallav Jain",
+    designation: "UG Leader",
+    role: "Indian Game Theory Society (IGTS)",
+    description: "",
+    phone: "+91 8928773112",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/pallav-jain-312829327/",
+  },
+  {
+    id: 3,
+    icon: "/images/wings/teampics/namya2.webp",
+    title: "Namya Jarag",
+    designation: "UG Leader",
+    role: "Indian Game Theory Society (IGTS)",
+    description: "",
+    phone: "+91 9825126240",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/namya-jarag/",
+  },
+  {
+    id: 4,
+    icon: "/images/wings/teampics/moksh2.webp",
+    title: "Moksh Sanghavi",
+    designation: "UG Leader",
+    role: "Indian Game Theory Society (IGTS)",
+    description: "",
+    phone: "+91 8128998432",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/moksh-sanghavi-659524313/",
+  },
+];
+
+const shareIitkTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/teampics/shikhar2.webp",
+    title: "Alice Smith",
+    designation: "Coordinator",
+    role: "Share IITK",
+    description: "",
+    phone: "+91 9876543210",
+    email: "alice@iitk.ac.in",
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/teampics/pallavigts.webp",
+    title: "Bob Jones",
+    designation: "Coordinator",
+    role: "Share IITK",
+    description: "",
+    phone: "+91 8765432109",
+    email: "bob@iitk.ac.in",
+    linkedin: "https://www.linkedin.com/",
+  },
+  {
+    id: 3,
+    icon: "/images/wings/teampics/namya2.webp",
+    title: "Charlie Brown",
+    designation: "Coordinator",
+    role: "Share IITK",
+    description: "",
+    phone: "+91 7654321098",
+    email: "charlie@iitk.ac.in",
+    linkedin: "https://www.linkedin.com/",
+  },
+];
+
+const GenSecData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "General Secretary",
+  description: "",
+  teams: GenSecMembers,
+};
+
+const IsecData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Institute Secretary",
+  description: "",
+  teams: IsecMembers,
+};
+
+const cdevTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Career Development Wing",
+  description: "Brain behind the innovation, contact them for any query",
+  teams: cdevTeamMebers,
+};
+
+const researchTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Research Wing",
+  description: "Innovators driving progress, contact us for any questions",
+  teams: researchTeamMebers,
+};
+
+const acadesTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Academics Wing",
+  description: "Minds shaping the future, contact us for any inquiries",
+  teams: acadesTeamMebers,
+};
+
+const interNationalTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "International Relations Wing",
+  description: "Trailblazers in the industry, reach out for any information",
+  teams: interNationalTeamMebers,
+};
+
+const pclubTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Product Club Team",
+  description: "Creators of cutting-edge solutions, reach out for any questions",
+  teams: pclubTeamMebers,
+};
+
+const outreachTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Finance and Logistics",
+  description: "Boost your outreach efforts, contact our experts today",
+  teams: outreachTeamMebers,
+};
+
+const mediaTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Media and Publicity",
+  description: "Leading the way in media solutions, we're here to assist you",
+  teams: mediaTeamMebers,
+};
+
+const webTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Web",
+  description: "Brain behind AnC's digital landscape",
+  teams: webTeamMebers,
+};
+
+const igtsTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Indian Game Theory Society (IGTS)",
+  description: "",
+  teams: igtsTeamMebers,
+};
+
+const shareIitkTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Share IITK Team",
+  description: "The team leading the Share IITK resources initiative",
+  teams: shareIitkTeamMebers,
+};
+
+export {
+  GenSecData,
+  IsecData,
+  cdevTeamData,
+  researchTeamData,
+  acadesTeamData,
+  interNationalTeamData,
+  pclubTeamData,
+  outreachTeamData,
+  mediaTeamData,
+  webTeamData,
+  igtsTeamData,
+  shareIitkTeamData,
+};
