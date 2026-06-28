@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 
 export default function FacultyAdviserPage() {
   const adviser = {
-    name: "Prof. John Doe",
+    name: "Dr. Raghvendra Kumar Chaudhary",
     designation: "Faculty Adviser",
-    department: "Department of Computer Science and Engineering",
+    department: " Department of Electrical Engineering",
     institution: "Indian Institute of Technology Kanpur",
-    image: "/images/user/user-01.png",
-    email: "faculty_adv@iitk.ac.in",
-    phone: "+91-512-259-XXXX",
-    office: "Room 301, CSE Building, IIT Kanpur",
+    image: "/images/user/Dr. Raghvendra Kumar Chaudhary.jpeg",
+    email: "raghvendra@iitk.ac.in",
+    phone: " +91-512-679-2306",
+    office: " ACES-325 ,Department of Electrical Engineering, IIT Kanpur",
     message: `Greetings! The Academics and Career Council (AnC) at IIT Kanpur plays a central role in guiding, supporting, and enriching the academic journeys and professional aspirations of our students. 
 
     Our goal is to foster an environment where students can discover their true potential, pursue academic excellence, and acquire the skills necessary for a successful career. Through peer-to-peer resource sharing, workshops, counseling, and interactive mentorship programs, the AnC council serves as a crucial link between the student body and the administration. I encourage all students to actively engage with the council's entities and make the most of the resources provided.`
